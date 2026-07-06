@@ -1,167 +1,74 @@
 # Sky Flight
 
-The reference application for the Into The Blue Operating System.
+**The immersive gateway to the Into The Blue Operating System.**
 
-Sky Flight is an immersive engineering application that demonstrates the capabilities of the Into The Blue Operating System (ITB OS).
+Sky Flight is the canonical immersive environment for the Into The Blue Operating System (ITB OS) — the spatial operating system in the Open Engineering Platform. It is not a demonstration of what spatial computing can do; it is the shell in which ITB OS is used. Where ITB OS provides the runtime, Sky Flight provides the world.
 
-It serves as the primary gateway into virtual and augmented engineering experiences, allowing users to explore, collaborate, learn, investigate, and create within spatial computing environments.
-
-Rather than being a single virtual world, Sky Flight is a platform for journeys through many engineering experiences.
-
-⸻
+Engineers use Sky Flight to walk through architectures, inspect digital twins, collaborate on live systems, and investigate the state of software the same way pilots read a chart. It is the desktop of ITB OS, rendered as an airspace.
 
 ## Purpose
 
-Engineering is becoming increasingly immersive.
+Sky Flight exists to make everyday engineering work — reviewing architectures, exploring systems of record, walking through digital twins, and reasoning about product models — a first-class immersive experience rather than a novelty.
 
-Software systems are evolving beyond monitors and keyboards into environments where engineers can:
+It is engineering-first:
 
-* walk through software architectures
-* inspect digital twins
-* collaborate inside virtual workspaces
-* learn by exploration
-* interact with intelligent characters
-* experience engineering concepts spatially
+- Every destination corresponds to real engineering activity, not a showcase scene.
+- Every journey maps to a task an engineer would actually perform: review, inspection, collaboration, incident response, learning, or investigation.
+- Every artifact is anchored to a Systems of Record or Product Model entity, so what appears in Sky Flight reflects what the organization actually knows.
 
-Sky Flight demonstrates how these experiences can be built using the reusable capabilities provided by the Into The Blue Operating System.
-
-⸻
+The result is an operating environment for engineers, delivered as flight through the systems they build.
 
 ## Position in the Open Engineering Platform
 
-The Open Engineering Platform separates reusable platform capabilities from the applications built upon them.
-```
-Open Engineering Platform
-        │
-        ▼
-Into The Blue Operating System
-        │
-        ▼
-Sky Flight
-```
-The operating system provides reusable immersive capabilities.
+The Open Engineering Platform is layered:
 
-Sky Flight demonstrates those capabilities through a complete user experience.
+- **Kernel** — shared primitives and interoperability contracts across the ecosystem.
+- **Operating Systems** — domain-specific runtimes built on the Kernel. Into The Blue OS is the spatial and immersive operating system.
+- **Applications** — the destinations, tools, and experiences that run on those operating systems.
 
-⸻
+Sky Flight is both the reference application of ITB OS and its immersive gateway:
 
-## What Sky Flight Provides
+- **ITB OS supplies the runtime** — rendering, networking, avatars, spatial interaction, device integration, and AI services.
+- **Sky Flight supplies the world** — the airspace, navigation, destinations, and journeys through which engineers experience that runtime.
+- **Other Open Engineering applications populate destinations inside Sky Flight** — see [Destinations](#destinations) below. Future operating systems can expose their own destinations the same way.
 
-Sky Flight brings together reusable technologies to create immersive engineering experiences, including:
-
-* Virtual Reality (VR)
-* Augmented Reality (AR)
-* Mixed Reality (MR)
-* Spatial Computing
-* Digital Twins
-* Multi-user collaboration
-* Intelligent AI assistants
-* Interactive engineering visualizations
-* Bluetooth and IoT integration
-* Real-time engineering data
-
-⸻
-
-## Destinations
-
-A Sky Flight journey may take users to experiences such as:
-
-* Agility Games
-* Code Smell Detectives
-* PKIStars
-* Repository explorations
-* Digital factories
-* Engineering laboratories
-* Interactive learning environments
-* Future Open Engineering applications
-
-Each destination is an independent experience while sharing the same immersive platform.
-
-⸻
+In this arrangement, Sky Flight is the place users enter the Open Engineering ecosystem, and ITB OS is what makes it habitable.
 
 ## Design Philosophy
 
-Sky Flight is built around exploration.
+Sky Flight uses aviation as a **navigation model**, not decoration. Every concept in the product answers one of three questions a traveler asks: *Where can I go?*, *How do I get there?*, and *Who am I flying with?* The vocabulary is deliberately small and consistent so that first-time visitors and returning engineers reach for the same words to describe the same actions.
 
-Rather than presenting information as documents or dashboards, engineering knowledge becomes a place that can be visited.
+Three principles keep the metaphor useful rather than ornamental:
 
-Users are encouraged to:
-
-* explore
-* discover
-* investigate
-* collaborate
-* learn
-* create
-
-Immersion transforms engineering from something viewed into something experienced.
-
-⸻
+1. **Every noun corresponds to a real surface.** Hangars, Cockpits, and Control Towers are places you can enter, not marketing labels.
+2. **Every verb is a movement.** Users *take a Flight*, *file a Flight Plan*, *reach a Destination*, and *return to a Waypoint* — the language stays kinetic because the experience is immersive.
+3. **The map is bigger than any single application.** Destinations are supplied by the wider Open Engineering ecosystem, so the metaphor extends naturally as new operating systems and applications join the sky.
 
 ## Core Concepts
 
-Flights
+The following terms form the working vocabulary of Sky Flight. Each is defined once and used consistently across the product surface.
 
-A Flight is an immersive journey through one or more engineering experiences.
+| Concept | Role |
+| --- | --- |
+| Hangar | The launcher. Where users choose which Flight to take. |
+| Flight | A user session in progress — an active journey through one or more Destinations. |
+| Destination | An immersive application or environment users fly to (see below). |
+| Waypoint | A saved location a user can return to inside or across Destinations. |
+| Flight Plan | A guided or curated experience that sequences Destinations and Waypoints. |
+| Cockpit | The user's personal workspace within the airspace — controls, instruments, and immediate context. |
+| Control Tower | The collaboration and orchestration surface where teams coordinate a Flight. |
+| Air Traffic Control | The multi-user synchronization and presence layer that keeps concurrent Flights aware of each other. |
 
-Destinations
+Read together, these concepts describe a complete operating environment: users depart from the **Hangar**, pilot from the **Cockpit**, travel along a **Flight Plan** through one or more **Destinations**, mark **Waypoints** they will return to, and stay coordinated with others through the **Control Tower** and **Air Traffic Control**.
 
-Destinations are virtual environments, applications, investigations, or learning experiences.
+## Destinations
 
-Waypoints
+Destinations are how Sky Flight opens onto the rest of the Open Engineering ecosystem. Rather than bundling every capability into a single application, Sky Flight is the immersive gateway from which each engineering domain becomes a place engineers can visit.
 
-Waypoints allow users to save and return to important locations within immersive worlds.
+Representative Destinations already aligned with the ecosystem:
 
-Flight Plans
+- **Agility Games** — a **training destination** where teams rehearse delivery practices and team dynamics in an immersive setting.
+- **Code Smell Detectives** — an **investigation destination** where engineers walk through codebases, inspect anti-patterns, and reason about design decisions in space.
+- **PKIStars** — a **cybersecurity destination** where certificate hierarchies, trust relationships, and key material can be explored spatially.
 
-A Flight Plan guides users through structured learning paths, investigations, demonstrations, or collaborative engineering sessions.
-
-⸻
-
-## Built on the Into The Blue Operating System
-
-Sky Flight uses reusable operating system capabilities including:
-
-* immersive rendering
-* spatial interaction
-* scene management
-* avatar support
-* networking
-* Bluetooth communication
-* world synchronization
-* input abstraction
-* AI integration
-* asset management
-
-These capabilities are provided by ITB OS and can be reused by future applications.
-
-⸻
-
-## Part of Open Engineering
-
-Sky Flight is part of the Open Engineering ecosystem.
-
-Together with other operating systems and applications, it contributes to a common engineering platform built on:
-
-* a shared Kernel
-* a shared Ontology
-* specialized Operating Systems
-* reusable Capsules
-* intelligent AI Assistants
-* composable Applications
-* a common Product Model
-* federated Systems of Record
-
-⸻
-
-## Vision
-
-Our vision is to make engineering immersive.
-
-Not merely viewing systems.
-
-Not merely documenting systems.
-
-But stepping into them.
-
-Sky Flight invites engineers to take flight into the next generation of engineering experiences.
+The Destination model is intentionally open: future Open Engineering operating systems and applications can expose their own Destinations inside Sky Flight without changing the core vocabulary. This keeps Sky Flight positioned as the entry point to the ecosystem, not as one application competing alongside the others.
