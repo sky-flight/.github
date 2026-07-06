@@ -2,7 +2,7 @@
 
 **The immersive gateway to the Into The Blue Operating System.**
 
-Sky Flight is the canonical immersive environment for the Into The Blue Operating System (ITB OS) — the spatial operating system in the Open Engineering Platform. It is not a demonstration of what spatial computing can do; it is the shell in which ITB OS is used. Where ITB OS provides the runtime, Sky Flight provides the world.
+Sky Flight is the canonical immersive environment for the [Into The Blue Operating System ](https://github.com/into-the-blue-operating-system)(ITB OS) — the spatial operating system in the Open Engineering Platform. It is not a demonstration of what spatial computing can do; it is the shell in which ITB OS is used. Where ITB OS provides the runtime, Sky Flight provides the world.
 
 Engineers use Sky Flight to walk through architectures, inspect digital twins, collaborate on live systems, and investigate the state of software the same way pilots read a chart. It is the desktop of ITB OS, rendered as an airspace.
 
